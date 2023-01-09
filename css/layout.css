@@ -1,0 +1,485 @@
+main {
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4em;
+    width: 100%;
+    margin-left: -10%;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+  nav a {
+    position: relative;
+    z-index: 1;
+  }
+  /* forside */
+  #grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+    padding: 0%;
+  }
+  h1 {
+    margin-top: 45%;
+    margin-left: 65px;
+    margin-bottom: 0px;
+    font-size: clamp(2.5rem, 6vw + 1rem, 6rem);
+  }
+
+  h2 {
+    margin-top: 0px;
+    margin-left: 50px;
+    font-size: clamp(2.5rem, 9vw + 1rem, 9rem);
+  }
+  #pariserhjul {
+    width: 70%;
+    margin-top: 60%;
+    margin-left: 10%;
+    margin-right: -15%;
+    margin-bottom: 0px;
+    padding: 0;
+    background-image: url(../images/Pariserhjul_fundament.svg);
+    background-repeat: no-repeat;
+  }
+
+  #pariserhjul_container {
+    width: 120%;
+    top: -19%;
+    left: -9%;
+    position: relative;
+    aspect-ratio: 598/598;
+    overflow: hidden;
+  }
+  #pariserhjul_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Pariserhjulet_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn1_container {
+    width: 12%;
+    top: -41.5%;
+    left: -14%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn1_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+  #vogn2_container {
+    width: 12%;
+    top: -37%;
+    left: -9%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn2_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn3_container {
+    width: 12%;
+    top: -57%;
+    left: 99.5%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn3_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn4_container {
+    width: 12%;
+    top: -72%;
+    left: 22%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn4_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn5_container {
+    width: 12%;
+    top: -57%;
+    left: 105%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn5_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn6_container {
+    width: 12%;
+    top: -47%;
+    left: 70%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn6_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn7_container {
+    width: 12%;
+    top: -50%;
+    left: 38%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn7_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn8_container {
+    width: 12%;
+    top: -63%;
+    left: 94%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn8_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn9_container {
+    width: 12%;
+    top: -95.5%;
+    left: 80%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn9_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn10_container {
+    width: 12%;
+    top: -104%;
+    left: 52%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn10_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  #vogn11_container {
+    width: 12%;
+    top: -101.5%;
+    left: -2.3%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn11_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+  #vogn12_container {
+    width: 12%;
+    top: -79.5%;
+    left: 9%;
+    aspect-ratio: 55/71;
+    position: relative;
+  }
+  #vogn12_sprite {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vogn_spin.svg);
+    background-size: cover;
+  }
+
+  /* projekter */
+
+  .grid_1-4 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 4em;
+    padding: 0%;
+    margin-top: 10%;
+  }
+
+  #tårn_container {
+    width: 100%;
+    aspect-ratio: 230/1020;
+  }
+  #tårn_container {
+    margin-left: 5%;
+    width: 100%;
+    background-image: url(../images/Tårn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  #sæder {
+    width: 100%;
+    top: 18%;
+    aspect-ratio: 190/110;
+    position: relative;
+    background-image: url(../images/Sæder.svg);
+  }
+
+  .grid_3-2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1em;
+  }
+  #pil {
+    width: 30%;
+    aspect-ratio: 415/145;
+    background-image: url(../images/pil.svg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  #pil2 {
+    width: 30%;
+    aspect-ratio: 415/145;
+    background-image: url(../images/pil.svg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  #pil3 {
+    width: 30%;
+    aspect-ratio: 415/145;
+    background-image: url(../images/pil.svg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  #pil4 {
+    width: 30%;
+    aspect-ratio: 415/145;
+    background-image: url(../images/pil.svg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  #pil5 {
+    width: 30%;
+    aspect-ratio: 415/145;
+    background-image: url(../images/pil.svg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  #pil6 {
+    width: 18%;
+    aspect-ratio: 415/145;
+    background-image: url(../images/pil.svg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  .grid_2-3 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+    padding: 0%;
+    margin-right: 0%;
+  }
+
+  .grid_2-3 .indhold {
+    padding-left: 20%;
+  }
+  #design_container {
+    margin-top: 40%;
+  }
+  .grid_3-2 .indhold {
+    padding-left: 5%;
+  }
+
+  .grid_4-1 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1em;
+    margin-top: 40px;
+    padding: 0%;
+  }
+  .grid_2-5 {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 1em;
+    margin-top: 20px;
+    padding: 0%;
+  }
+
+  .grid_6-1 {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    gap: 1em;
+    padding: 0%;
+  }
+  #popcorn_container {
+    order: 1;
+  }
+  #balloner_container {
+    width: 80%;
+    top: 80%;
+    left: 10%;
+    aspect-ratio: 696/707;
+    position: relative;
+  }
+  #balloner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+
+  #ballonsnor {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    background-image: url(../images/Snor.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #ballon1_container {
+    width: 40%;
+    top: -26%;
+    left: -33%;
+    aspect-ratio: 260/340;
+
+    position: absolute;
+    cursor: pointer;
+  }
+  #ballon1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Ballon_1.svg);
+    background-size: cover;
+  }
+  #ballon2_container {
+    width: 40%;
+    top: -51%;
+    left: 10%;
+    position: absolute;
+    aspect-ratio: 245/360;
+    cursor: pointer;
+  }
+  #ballon2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Ballon_2.svg);
+    background-size: cover;
+  }
+  #ballon3_container {
+    width: 40%;
+    top: -36%;
+    left: 58%;
+    position: absolute;
+    aspect-ratio: 245/360;
+    cursor: pointer;
+  }
+  #ballon3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Ballon_3.svg);
+    background-size: cover;
+  }
+  .grid_1-1 {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 0%;
+  }
+
+  .område {
+    margin-left: 5%;
+  }
+  /* Om mig */
+
+  #portrætbillede {
+    width: 38%;
+  }
+
+  #cv {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  .grid_1-3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .grid_1-3 h3 {
+    justify-self: end;
+    font-size: 37px;
+    margin-top: 0;
+    order: 1;
+  }
+
+  .margin {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    border-style: solid;
+    border-color: black;
+  }
+  .overskrift {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .grid_1-6 {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 0em;
+  }
+  .overskrift2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .grid_columns {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 5em;
+  }
+}

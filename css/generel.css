@@ -1,0 +1,494 @@
+/* forside */
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kumbh+Sans:wght@300&family=Nothing+You+Could+Do&display=swap");
+@font-face {
+  font-family: lmroman;
+  src: url("../font/lmroman12-regular.otf");
+}
+
+#forside {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-image: url(../images/rutsjebane2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  color: black;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 23px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+h1 {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: clamp(2.5rem, 6vw + 1rem, 6rem);
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: clamp(2.5rem, 9vw + 1rem, 9rem);
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+img {
+  width: 30%;
+  z-index: 5;
+}
+
+/* projekter */
+h3 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+h4 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.brødtekst {
+  font-family: lmroman;
+  max-width: 65ch;
+}
+
+/* Tema 2 */
+
+#design_container {
+  margin-top: 90px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+#design {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#emnesite {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite.webp);
+  background-size: cover;
+}
+#emnesite1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite1.webp);
+  background-size: cover;
+}
+#emnesite2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite2.webp);
+  background-size: cover;
+}
+#emnesite3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite3.webp);
+  background-size: cover;
+}
+#emnesite4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite4.webp);
+  background-size: cover;
+}
+#emnesite5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite5.webp);
+  background-size: cover;
+}
+
+/* Tema 3 */
+
+#afsnit {
+  margin-left: 15%;
+  margin-bottom: 50px;
+}
+#proces_container {
+  margin-top: 70px;
+
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+}
+
+#proces {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#løsning {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/proces.png);
+  background-size: cover;
+}
+#løsning1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/proces1.png);
+  background-size: cover;
+}
+#løsning2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/proces2.png);
+  background-size: cover;
+}
+#løsning3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/proces3.png);
+  background-size: cover;
+}
+
+/* Tema 4 */
+
+#skib_container {
+  margin-top: 150px;
+  margin-left: 18%;
+  width: 65%;
+  aspect-ratio: 566/540;
+  background-image: url(../images/fundament_skib.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#skib {
+  width: 80%;
+  top: 4.8%;
+  left: 10%;
+  aspect-ratio: 440/425;
+  position: relative;
+  background-image: url(../images/skib.svg);
+  background-size: cover;
+}
+
+#dokumentation_container {
+  margin-top: 70px;
+  margin-right: 15%;
+
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+}
+
+#dokumentation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#dokumentation1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/dokumentation.png);
+  background-size: cover;
+}
+#dokumentation2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/dokumentation1.png);
+  background-size: cover;
+}
+#dokumentation3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/dokumentation2.png);
+  background-size: cover;
+}
+#dokumentation4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/dokumentation3.png);
+  background-size: cover;
+}
+
+#popcorn_container {
+  padding-left: 20%;
+  width: 70%;
+  aspect-ratio: 265/410;
+  align-items: center;
+  background-image: url(../images/Popcorn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 50%;
+  cursor: pointer;
+}
+
+#popcorn {
+  width: 20%;
+  top: 9%;
+  left: 0%;
+  position: relative;
+  aspect-ratio: 50/51;
+  background-image: url(../images/popkorn.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#sektion {
+  margin-right: 5%;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+#layoutdiagram_container {
+  margin-top: 70px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+}
+
+#layoutdiagram {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#layoutdiagram1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/layoutdiagram.png);
+  background-size: cover;
+}
+#layoutdiagram2 {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/layoutdiagram1.png);
+  background-size: cover;
+}
+
+#udsnit {
+  margin-left: 10%;
+}
+#temadokumentation_container {
+  margin-top: 70px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+#temadokumentation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#temadokumentation1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/temadokumentation.png);
+  background-size: cover;
+}
+#temadokumentation2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/temadokumentation1.png);
+  background-size: cover;
+}
+#temadokumentation3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/temadokumentation2.png);
+  background-size: cover;
+}
+#temadokumentation4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/temadokumentation3.png);
+  background-size: cover;
+}
+#temadokumentation5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/temadokumentation4.png);
+  background-size: cover;
+}
+#pil6 {
+  margin-bottom: 0;
+  width: 20%;
+}
+#portfoliodok_container {
+  margin-top: 10px;
+  margin-right: 15%;
+  width: 60%;
+  aspect-ratio: 1920/4371;
+  position: relative;
+  overflow: hidden;
+}
+
+#portfoliodok {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+#portfoliodok1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/emnesite.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#portfoliodok2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/portfolio1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#portfoliodok3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/portfolio2.png);
+  background-size: cover;
+}
+
+/* om mig */
+#portrætbillede {
+  margin-top: 11.5%;
+  margin-left: 40%;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+#rutsjebane_container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+  margin-top: -8%;
+  margin-bottom: -5%;
+}
+#rutsjebane {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../images/Rutsjebane.svg);
+  background-size: cover;
+}
+.brødtekst2 {
+  font-family: lmroman;
+}
+.brødtekst2 p {
+  margin-bottom: 15px;
+}

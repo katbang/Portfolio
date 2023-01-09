@@ -1,0 +1,514 @@
+@media (min-width: 800px) {
+  .spin {
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin11 {
+    animation-name: spin11;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin11 {
+    0% {
+      transform-origin: 540% 100%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: 540% 100%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin12 {
+    animation-name: spin12;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin12 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin21 {
+    animation-name: spin21;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin21 {
+    0% {
+      transform-origin: 500% -100%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: 500% -100%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin22 {
+    animation-name: spin22;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin22 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .spin31 {
+    animation-name: spin31;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin31 {
+    0% {
+      transform-origin: -400% 210%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: -400% 210%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin32 {
+    animation-name: spin32;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin32 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin41 {
+    animation-name: spin41;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin41 {
+    0% {
+      transform-origin: 250% 400%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: 250% 400%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin42 {
+    animation-name: spin42;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin42 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin51 {
+    animation-name: spin51;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin51 {
+    0% {
+      transform-origin: -450% 10%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: -450% 10%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin52 {
+    animation-name: spin52;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin52 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin61 {
+    animation-name: spin61;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin61 {
+    0% {
+      transform-origin: -160% -300%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: -160% -300%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin62 {
+    animation-name: spin62;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin62 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin71 {
+    animation-name: spin71;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin71 {
+    0% {
+      transform-origin: 110% -330%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: 110% -330%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin72 {
+    animation-name: spin72;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin72 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin81 {
+    animation-name: spin81;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin81 {
+    0% {
+      transform-origin: -350% -180%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: -350% -180%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin82 {
+    animation-name: spin82;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin82 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin91 {
+    animation-name: spin91;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin91 {
+    0% {
+      transform-origin: -240% 360%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: -240% 360%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin92 {
+    animation-name: spin92;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin92 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin101 {
+    animation-name: spin101;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin101 {
+    0% {
+      transform-origin: -5% 430%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: -5% 430%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin102 {
+    animation-name: spin102;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin102 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin111 {
+    animation-name: spin111;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin111 {
+    0% {
+      transform-origin: 450% 280%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: 450% 280%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin112 {
+    animation-name: spin112;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin112 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .spin121 {
+    animation-name: spin121;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes spin121 {
+    0% {
+      transform-origin: 350% -250%;
+      transform: rotate(0deg);
+    }
+    100% {
+      transform-origin: 350% -250%;
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin122 {
+    animation-name: spin122;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin122 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  .upanddown {
+    animation-name: upanddown;
+    animation-duration: 15s;
+  }
+
+  @keyframes upanddown {
+    0% {
+      transform: translate(0, 0);
+    }
+    30% {
+      transform: translate(0, 460%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  .skjul {
+    display: none;
+  }
+  .forsvind {
+    animation-name: forsvind;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  @keyframes forsvind {
+    0% {
+      opacity: 100%;
+    }
+    50% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+}
+
+.sving {
+  animation-name: sving;
+  animation-duration: 10s;
+}
+
+@keyframes sving {
+  0% {
+    transform-origin: 50% 0%;
+    transform: rotate(0deg);
+  }
+  20% {
+    transform-origin: 50% 0%;
+    transform: rotate(-85deg);
+  }
+  70% {
+    transform-origin: 50% 0%;
+    transform: rotate(85deg);
+  }
+
+  100% {
+    transform-origin: 50% 0%;
+    transform: rotate(0deg);
+  }
+}
+
+.move1 {
+  animation-name: move1;
+  animation-duration: 2s;
+}
+
+@keyframes move1 {
+  0% {
+    opacity: 100%;
+    transform: translate(0);
+  }
+
+  70% {
+    opacity: 100%;
+    transform-origin: 20% -50%;
+    transform: translate(-150%, -300%);
+  }
+
+  100% {
+    opacity: 0%;
+    transform-origin: 20% -50%;
+    transform: translate(-150%, -300%);
+  }
+}
+.move2 {
+  animation-name: move2;
+  animation-duration: 2s;
+}
+
+@keyframes move2 {
+  0% {
+    opacity: 100%;
+    transform-origin: -20% 50%;
+    transform: translate(0);
+  }
+
+  70% {
+    opacity: 100%;
+    transform-origin: -20% 50%;
+    transform: translate(300%, -370%);
+  }
+
+  100% {
+    opacity: 0%;
+    transform-origin: -20% 50%;
+    transform: translate(300%, -370%);
+  }
+}
+.move3 {
+  animation-name: move3;
+  animation-duration: 2s;
+}
+
+@keyframes move3 {
+  0% {
+    opacity: 100%;
+    transform-origin: -20% 50%;
+    transform: translate(0);
+  }
+
+  70% {
+    opacity: 100%;
+    transform-origin: -20% 50%;
+    transform: translate(50%, -450%);
+  }
+
+  100% {
+    opacity: 0%;
+    transform-origin: -20% 50%;
+    transform: translate(50%, -450%);
+  }
+}
