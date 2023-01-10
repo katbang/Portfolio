@@ -38,6 +38,7 @@ main {
 
   #container {
     width: 100%;
+    margin-top: 2%;
     aspect-ratio: 646/721;
     position: relative;
   }
