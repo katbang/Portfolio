@@ -35,22 +35,28 @@ main {
     margin-left: 50px;
     font-size: clamp(2.5rem, 9vw + 1rem, 9rem);
   }
+
+  #container {
+    width: 100%;
+    aspect-ratio: 646/721;
+    position: relative;
+  }
+
   #pariserhjul {
-    width: 70%;
-    margin-top: 60%;
-    margin-left: 10%;
-    margin-right: -15%;
-    margin-bottom: 0px;
-    padding: 0;
+    width: 75%;
+    top: 43%;
+    left: 6%;
+    aspect-ratio: 480/430;
+    position: absolute;
     background-image: url(../images/Pariserhjul_fundament.svg);
-    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   #pariserhjul_container {
-    width: 120%;
-    top: -19%;
-    left: -9%;
-    position: relative;
+    width: 90%;
+    top: 5%;
+    left: -1%;
+    position: absolute;
     aspect-ratio: 598/598;
     overflow: hidden;
   }
@@ -62,11 +68,11 @@ main {
   }
 
   #vogn1_container {
-    width: 12%;
-    top: -41.5%;
-    left: -14%;
+    width: 9%;
+    top: 38.5%;
+    left: -5%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn1_sprite {
     width: 100%;
@@ -75,11 +81,11 @@ main {
     background-size: cover;
   }
   #vogn2_container {
-    width: 12%;
-    top: -37%;
-    left: -9%;
+    width: 9%;
+    top: 59.5%;
+    left: 0%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn2_sprite {
     width: 100%;
@@ -89,11 +95,11 @@ main {
   }
 
   #vogn3_container {
-    width: 12%;
-    top: -57%;
-    left: 99.5%;
+    width: 9%;
+    top: 27%;
+    left: 80.5%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn3_sprite {
     width: 100%;
@@ -103,11 +109,11 @@ main {
   }
 
   #vogn4_container {
-    width: 12%;
-    top: -72%;
-    left: 22%;
+    width: 9%;
+    top: 8%;
+    left: 21.5%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn4_sprite {
     width: 100%;
@@ -117,11 +123,11 @@ main {
   }
 
   #vogn5_container {
-    width: 12%;
-    top: -57%;
-    left: 105%;
+    width: 9%;
+    top: 48%;
+    left: 84.5%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn5_sprite {
     width: 100%;
@@ -131,11 +137,11 @@ main {
   }
 
   #vogn6_container {
-    width: 12%;
-    top: -47%;
-    left: 70%;
+    width: 9%;
+    top: 80%;
+    left: 58%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn6_sprite {
     width: 100%;
@@ -145,11 +151,11 @@ main {
   }
 
   #vogn7_container {
-    width: 12%;
-    top: -50%;
-    left: 38%;
+    width: 9%;
+    top: 83%;
+    left: 34%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn7_sprite {
     width: 100%;
@@ -159,11 +165,11 @@ main {
   }
 
   #vogn8_container {
-    width: 12%;
-    top: -63%;
-    left: 94%;
+    width: 9%;
+    top: 68%;
+    left: 76%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn8_sprite {
     width: 100%;
@@ -173,9 +179,9 @@ main {
   }
 
   #vogn9_container {
-    width: 12%;
-    top: -95.5%;
-    left: 80%;
+    width: 9%;
+    top: 11.5%;
+    left: 66%;
     aspect-ratio: 55/71;
     position: relative;
   }
@@ -187,11 +193,11 @@ main {
   }
 
   #vogn10_container {
-    width: 12%;
-    top: -104%;
-    left: 52%;
+    width: 9%;
+    top: 4%;
+    left: 45%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn10_sprite {
     width: 100%;
@@ -201,11 +207,11 @@ main {
   }
 
   #vogn11_container {
-    width: 12%;
-    top: -101.5%;
-    left: -2.3%;
+    width: 9%;
+    top: 20.5%;
+    left: 3.7%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn11_sprite {
     width: 100%;
@@ -214,11 +220,11 @@ main {
     background-size: cover;
   }
   #vogn12_container {
-    width: 12%;
-    top: -79.5%;
-    left: 9%;
+    width: 9%;
+    top: 74.5%;
+    left: 14%;
     aspect-ratio: 55/71;
-    position: relative;
+    position: absolute;
   }
   #vogn12_sprite {
     width: 100%;
