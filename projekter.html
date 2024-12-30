@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="nav-bar">
         <ul>
           <li><a href="index.html"> Forside</a></li>
           <li><a href="projekter.html"> Projekter</a></li>
@@ -21,357 +21,189 @@
       </nav>
     </header>
     <main>
-      <div class="grid_1-4">
-        <div id="tårn_container"></div>
-        <div>
+      <div id="projects">
+        <section class="overblik">
+          <ul>
+            <li><a href="#grid_1-7">Bikekey</a></li>
+            <li><a href="#grid_6-1">Aktivt Ansigt</a></li>
+            <li><a href="#grid_2-4">1. semester portfolio</a></li>
+          </ul>
+          <div id="rutsjebane_container"><div id="rutsjebane"></div></div>
+          <div id="tårn_2"><div id="sæder_2"></div></div>
+        </section>
+        <section id="grid_1-7">
+          <div id="tårn_container"><div id="sæder"></div></div>
+          <div class="grid_2-3">
+            <div>
+              <h3>Bikekey: Nyt opdateret design</h3>
+              <p class="brødtekst">
+                I min tid hos Bikekey har jeg videreudviklet deres eksisterende webapplikation og løftet brugeroplevelsen gennem implementering af et nyt design på deres interface.
+                Jeg har arbejdet tæt sammen med deres UX-designer for at sikre, at designet både var visuelt appellerende og brugervenligt.
+              </p>
+              <p class="brødtekst">Mit arbejde omfattede blandt andet:</p>
+              <ul class="brødtekst">
+                <li>Implementering af nye UI-komponenter i React TypeScript.</li>
+                <li>Optimering af eksisterende kodebase for at forbedre performance og vedligeholdelse.</li>
+                <li>Udvikling og implementering af End-to-End tests for at sikre stabilitet og funktionalitet.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="documentation-img">
+                <p class="brødtekst">Gammelt design:</p>
+                <img id="old-design" src="../images/old-design.png" alt="old design" />
+              </div>
+              <div class="documentation-img">
+                <p class="brødtekst">Nyt design:</p>
+                <img id="new-design" src="../images/new-design.png" alt="old design" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="grid_6-1" data-background="black">
+          <div id="popcorn_container">
+            <div id="popcorn"></div>
+          </div>
+          <div class="indhold">
+            <div>
+              <h3>Center for Hjerneskade:</h3>
+              <h4><em>Aktivt Ansigt</em></h4>
+              <p class="brødtekst">
+                Som en del af mit afsluttende eksamensprojekt udviklede jeg i samarbejde med Center for Hjerneskade en webapplikation designet til at støtte borgere i deres
+                rehabiliteringsforløb. Applikationen gjorde det muligt at sammensætte individuelle træningsprogrammer til genoptræning af ansigtsmotorik.
+              </p>
+              <p class="brødtekst">Projektet lagde vægt på:</p>
+              <ul class="brødtekst">
+                <li>
+                  UX Research: Vi gennemførte omfattende brugerundersøgelser og behovsanalyser for at sikre, at løsningen var intuitiv og imødekom borgernes og fagpersonernes
+                  behov.
+                </li>
+                <li>Tilgængelighed/Accessibility: Applikationen blev designet med fokus på brugervenlighed for alle, uanset borgernes forskellige behov og udfordringer.</li>
+                <li>
+                  Samarbejde med eksterne interessenter: Vi samarbejdede tæt med eksperter fra Center for Hjerneskade for at forstå deres arbejdsprocesser og omsætte deres behov
+                  til funktionelle designløsninger.
+                </li>
+              </ul>
+              <p class="brødtekst">Link til vores løsning:</p>
+              <a class="brødtekst" href="https://aktivtansigt.netlify.app//" target="_blank">https://aktivtansigt.netlify.app/</a>
+            </div>
+          </div>
+        </section>
+        <section id="grid_2-4">
+          <div id="skib_container">
+            <div id="skib" class="sving"></div>
+          </div>
+          <div class="indhold">
+            <div>
+              <h3>Redesign af 1. semester portfolio hjemmeside:</h3>
+              <p class="brødtekst">
+                Min nuværende portfolio-hjemmeside er baseret på den portfolio, jeg oprindeligt udviklede på første semester af multimediedesigneruddannelsen. Jeg har genbrugt det
+                fundamentale design og layout fra den oprindelige version, men har lavet tilpasninger og designændringer for at forbedre og modernisere den.
+              </p>
+              <p class="brødtekst">
+                Den oprindelige portfolio blev skabt i stilen Flat Design, inspireret af skyggeteater og tivoli. Jeg designede illustrationer af forlystelser og andre elementer i
+                Adobe Illustrator og animerede dem ved hjælp af JavaScript. Animationerne blev skabt med CSS-transform-properties som rotate, translate og transform-origin, hvilket
+                gav siden en dynamisk og legende visuel oplevelse.
+              </p>
+              <p class="brødtekst">Link til den oprindelige portfolio hjemmeside:</p>
+              <a class="brødtekst" href="https://first-semester-portfolio.netlify.app/" target="_blank">https://first-semester-portfolio.netlify.app/</a>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="grid_4-1" data-background="black">
           <div>
-            <h3>Tema 2 - Grundlæggende Web:</h3>
-            <h4><em>02.01.02 Website</em></h4>
-            <p class="brødtekst">
-              I denne opgave skulle vi kode et responsivt website i programmet;
-              Visual Studio Code, ud fra tekst, billeder, wireframes og
-              layoutdiagrammer, som vi havde fået udleveret af vores
-              undervisere. Undervejs i processen fik jeg kendskab til en række
-              forskellige HTML-elementer og attributter samt stylingegenskaber i
-              CSS. Jeg lærte blandt andet at opsætte en navigationsmenu ved
-              hjælp af HTML-elementerne; nav, ul, li og a. I min kodning af
-              websitet benyttede jeg mig af flexbox og grids, og jeg gjorde
-              websitet responsivt ved at bruge media queries. Jeg tog selv
-              stilling til hvilke farver og fonte, som skulle optræde på
-              websitet, men jeg havde overordnet set ikke de store
-              udfoldelsesmuligheder, idet wireframes og layoutdiagrammerne var
-              givet på forhånd. Jeg tilegnede mig dog færdigheder, som jeg kunne
-              anvende i de senere opgaver og temaer. Det var i begyndelsen
-              udfordrende at skulle implementere de forskellige grids, men det
-              har været et uundværligt redskab, når man har skullet designe
-              hjemmesider.
-            </p>
-            <p class="brødtekst">Link til mit website:</p>
-            <a
-              class="brødtekst"
-              href="https://semesterstartsproeve.netlify.app/"
-              target="_blank"
-              >https://semesterstartsproeve.netlify.app/</a
-            >
-          </div>
-          <div class="grid_2-3">
-            <div>
-              <div id="design_container">
-                <div id="design">
-                  <div id="emnesite"></div>
-                  <div id="emnesite1"></div>
-                  <div id="emnesite2"></div>
-                  <div id="emnesite3"></div>
-                  <div id="emnesite4"></div>
-                  <div id="emnesite5"></div>
-                </div>
+            <div class="grid_3-2">
+              <div class="indhold">
+                <h3>Tema 5 - Grundlæggende indhold:</h3>
+                <h4><em>05.01.02 Pilotsite</em></h4>
+                <p class="brødtekst">
+                  Vi skulle i dette forløb producere en pilotvideo og en hjemmeside til videoen. Vi var tre om at filme et interview af en fyr, som fortalte om sin passion for
+                  fotografering. Under filmningen var vi opmærksomme på, at kameraet blev holdt i vater, og at der var luft i blikretningen. Vi sørgede også for at have en masse
+                  b-rolls. Vi skulle hver især klippe vores egen video i programmet Adobe Premiere Pro. Hjemmesiden skulle indeholde minimum 4 stillfotos og tekster, som ville få
+                  siden til at fremstå som et promoveringssite. Jeg indsatte derfor et citat fra interviewet, og jeg oplistede også navnene på mig og mine gruppemedlemmer på mit
+                  pilotsite. Videoen skulle lægges ind på to forskellige måder. Jeg lærte således både, hvordan man brugte Youtube-embed-metoden og video-tagget i html. Jeg lærte
+                  også at lave min egen play- og stop-knapper samt knapper, som kunne ændre afspilningshastigheden.
+                </p>
+                <p class="brødtekst">Link til mit pilotsite:</p>
+                <a class="brødtekst" href="https://pilot-site.netlify.app/" target="_blank">https://pilot-site.netlify.app/</a>
               </div>
-              <div id="pil"></div>
-            </div>
-            <div class="indhold">
-              <h4><em>02.02.01 Emnesite</em></h4>
-              <p class="brødtekst">
-                Opgaven gik ud på at kode og designe et website, hvis indhold
-                skulle bygges på et valgfrit emne. Vi blev i begyndelsen
-                introduceret for de 4 stilarter: Modernisme, postmodernisme,
-                retro design og futurisme, hvorefter vi skulle vælge, hvilken af
-                stilarterne vi ville udarbejde vores design ud fra. Jeg valgte
-                emnet Tim Burton, og stilen postmodernisme, idet stilen var mere
-                ekspressiv og dekorativ sammenlignet med de andre. Jeg fik på
-                den måde mulighed for at udvikle et eksperimenterende og bizart
-                design, som kunne harmonere med mit valgte emne. Jeg lærte at
-                arbejde i programmerne Adobe Photoshop og Adobe XD. I Photoshop
-                lavede jeg splashart til mit emnesite vha. værktøjer såsom; Move
-                tool, Type tool, Adjustment layers - Invert og Blending mode. I
-                XD lavede jeg et moodboard og et styletile, som skulle
-                visualisere mit design. Jeg fik i dette forløb et større
-                kendskab og forståelse for designkonventionerne og
-                designprincipperne.
-              </p>
-              <p class="brødtekst">Link til mit emnesite:</p>
-              <a
-                class="brødtekst"
-                href="https://emnesite-web.netlify.app/"
-                target="_blank"
-                >https://emnesite-web.netlify.app/</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid_6-1">
-        <div id="popcorn_container">
-          <div id="popcorn"></div>
-        </div>
-        <div>
-          <div class="grid_2-3">
-            <div id="afsnit">
-              <div id="proces_container">
-                <div id="proces">
-                  <div id="løsning"></div>
-                  <div id="løsning1"></div>
-                  <div id="løsning2"></div>
-                  <div id="løsning3"></div>
+              <div id="sektion">
+                <div id="layoutdiagram_container">
+                  <div id="layoutdiagram">
+                    <div id="layoutdiagram1"></div>
+                    <div id="layoutdiagram2"></div>
+                  </div>
                 </div>
+                <div id="pil4"></div>
               </div>
-              <div id="pil2"></div>
             </div>
-
-            <div class="indhold">
-              <h3>Tema 3 - Grundlæggende UX:</h3>
-              <h4><em>03.02.02 Løsning</em></h4>
-              <p class="brødtekst">
-                I denne opgave skulle vi lave en prototype af en webshop, som
-                sælger t-shirts. Vi blev først undervist i UX-research og de
-                forskellige researchmetoder, som vi skulle arbejde med: Desk
-                research, observation, interview og survey. Formålet med
-                researchen var at få indsigt og forståelse for brugernes adfærd
-                og behov, så vi på baggrund af indsigterne kunne udvikle et
-                produkt. I min survey fandt jeg bl.a. ud af, at 5 ud af
-                surveyens 12 respondenter foretrak simple t-shirts, og som følge
-                af denne indsigt valgte jeg at designe en t-shirt med et simpelt
-                udtryk. Efter research-delen blev vi introduceret for en
-                skitseringsmetode kaldet The Four Step Sketch, som bestod af
-                følgende steps: Notes, Ideas, Crazy 8’s og Solution sketch.
-                Metoden hjalp én i processen fra ide til løsning. Ud fra min
-                solution sketch lavede jeg min første prototype i XD, som jeg
-                senere skulle arbejde videre på. Jeg skulle selv vælge fotostil
-                og lave copy og microcopy til prototypen af webshoppen. Da alle
-                de vigtige beslutninger var truffet stod min endelige prototype
-                færdig.
-              </p>
-              <p class="brødtekst">Link til min XD prototype:</p>
-              <a
-                class="brødtekst"
-                href="https://xd.adobe.com/view/c751c584-71b5-4d5c-b739-ab5d6cb579de-9202/"
-                target="_blank"
-                >https://xd.adobe.com/view/c751c584-71b5-4d5c-b739-ab5d6cb579de-9202/</a
-              >
-            </div>
-          </div>
-          <div class="område">
-            <h4><em>03.03.02 Pitch</em></h4>
-            <p class="brødtekst">
-              Jeg skulle i denne opgave udarbejde et slidedeck til en pitch af
-              min UX-research, UX/UI-design og min UX-test. Gennem opgaven fik
-              jeg således erfaring med pitch af UX-leverancer. Pitchen måtte kun
-              vare 5 minutter, og jeg måtte derfor udvælge de vigtigste pointer.
-              Jeg kom i min pitch ind på en række forskellige ting, såsom mine
-              indsigter fra observationen og desk-researchen, målgruppen og USP,
-              webshoppens copy og microcopy, samt mine resultater fra
-              tænke-højt-testen. Jeg modtog også brugbar feedback, som jeg kunne
-              tage med mig videre i mine fremtidige projekter. Jeg lærte bl.a.,
-              at jeg skulle være forsigtig med at tage beslutninger baseret på
-              mine egne forudindtagede overbevisninger. Jeg antog nemlig, at den
-              yngre målgruppe ikke havde nær så mange penge til rådighed, men da
-              respondenterne fra min research ikke repræsenterede denne
-              målgruppe, så kunne jeg ikke være sikker i min antagelse.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="grid_2-5">
-        <div id="skib_container">
-          <div id="skib" class="sving"></div>
-        </div>
-        <div>
-          <div class="grid_3-2">
-            <div class="indhold">
-              <h3>Tema 4 - Animation:</h3>
-              <h4><em>04.04.01 Temaopgave</em></h4>
-              <p class="brødtekst">
-                Vi skulle i dette forløb designe og kode vores eget
-                ”click”-spil. I den forbindelse lærte vi at kode i JavaScript,
-                og vi lærte om CSS animation property'en @keyframes. Vores
-                spildesign skulle tage udgangspunkt i en stil. Jeg valgte at gå
-                med stilen Joan Cornella. Spillet skulle opfylde en række krav.
-                Der skulle bl.a. være både gode og dårlige ting, som man skulle
-                kunne klikke på. Vi skulle også lave aktivitetsdiagrammer og
-                state machine-diagrammer, som illustrerede spillets forskellige
-                aktiviteter. I mit JavaScript gjorde jeg bl.a. brug af
-                funktionen queryselector og en property kaldet classlist, så jeg
-                kunne tilføje animationsklasser til de forskellige
-                spilelementer. Derudover anvendte jeg evenlistners, som kunne
-                registrere de forskellige begivenheder. Vi skulle til sidst også
-                lave vores egen baggrundsmusik og lyde til spillet. Jeg
-                producerede og redigerede lydene i programmet Adobe Audtition.
-              </p>
-              <p class="brødtekst">Link til mit spil:</p>
-              <a
-                class="brødtekst"
-                href="https://t2-animation-website.netlify.app/"
-                target="_blank"
-                >https://t2-animation-website.netlify.app/</a
-              >
-            </div>
-            <div>
-              <div id="dokumentation_container">
-                <div id="dokumentation">
-                  <div id="dokumentation1"></div>
-                  <div id="dokumentation2"></div>
-                  <div id="dokumentation3"></div>
-                  <div id="dokumentation4"></div>
+            <div class="grid_2-3">
+              <div id="udsnit">
+                <div id="temadokumentation_container">
+                  <div id="temadokumentation">
+                    <div id="temadokumentation1"></div>
+                    <div id="temadokumentation2"></div>
+                    <div id="temadokumentation3"></div>
+                    <div id="temadokumentation4"></div>
+                    <div id="temadokumentation5"></div>
+                  </div>
                 </div>
+                <div id="pil5"></div>
               </div>
-              <div id="pil3"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid_4-1">
-        <div>
-          <div class="grid_3-2">
-            <div class="indhold">
-              <h3>Tema 5 - Grundlæggende indhold:</h3>
-              <h4><em>05.01.02 Pilotsite</em></h4>
-              <p class="brødtekst">
-                Vi skulle i dette forløb producere en pilotvideo og en
-                hjemmeside til videoen. Vi var tre om at filme et interview af
-                en fyr, som fortalte om sin passion for fotografering. Under
-                filmningen var vi opmærksomme på, at kameraet blev holdt i
-                vater, og at der var luft i blikretningen. Vi sørgede også for
-                at have en masse b-rolls. Vi skulle hver især klippe vores egen
-                video i programmet Adobe Premiere Pro. Hjemmesiden skulle
-                indeholde minimum 4 stillfotos og tekster, som ville få siden
-                til at fremstå som et promoveringssite. Jeg indsatte derfor et
-                citat fra interviewet, og jeg oplistede også navnene på mig og
-                mine gruppemedlemmer på mit pilotsite. Videoen skulle lægges ind
-                på to forskellige måder. Jeg lærte således både, hvordan man
-                brugte Youtube-embed-metoden og video-tagget i html. Jeg lærte
-                også at lave min egen play- og stop-knapper samt knapper, som
-                kunne ændre afspilningshastigheden.
-              </p>
-              <p class="brødtekst">Link til mit pilotsite:</p>
-              <a
-                class="brødtekst"
-                href="https://pilot-site.netlify.app/"
-                target="_blank"
-                >https://pilot-site.netlify.app/</a
-              >
-            </div>
-            <div id="sektion">
-              <div id="layoutdiagram_container">
-                <div id="layoutdiagram">
-                  <div id="layoutdiagram1"></div>
-                  <div id="layoutdiagram2"></div>
+              <div class="indhold">
+                <h4><em>05.02.01 Redesign og temadokumentation</em></h4>
+                <p class="brødtekst">
+                  Vi skulle i denne opgave lave et redesign af en virksomheds hjemmeside og en tilhørende video. Her blev vi inddelt i firemandsgrupper, og vi skulle i den
+                  forbindelse lave en gruppekontrakt. På den måde kunne vi afstemme vores forventninger og danne grundlag for et velfungerende samarbejde. Vi blev i min gruppe
+                  enige om, at det var vigtigt, at samarbejdet skulle være behageligt, og at vi alle skulle føle os hørt. I min gruppe fandt vi frem til en zoneterapeut, hvis
+                  hjemmeside vi fik lov til at redesigne. Vi blev undervejs også introduceret for Scrum, hvilket er værktøjer, som anvendes i planlægningen af ens arbejde. Hver
+                  gang vi mødtes afholdte vi daily scrum, så vi kunne holde hinanden opdateret om, hvor langt vi var nået, og hvilke planer vi havde. Jeg blev bl.a. tildelt opgaven
+                  at skulle redigere billeder i Photoshop til vores hjemmeside. Jeg sørgede derudover for, at der var et ensartet design på samtlige af hjemmesidens undersider. Vi
+                  lavede undervejs også en række tests såsom BERT-test, eksperttest og lighthouse test.
+                </p>
+                <p class="brødtekst">Links til min gruppes redesign og temadokumentation - kodeord:kea:</p>
+                <div>
+                  <a
+                    class="brødtekst"
+                    href="https://kassandraw.github.io/Re-design/index.html 
+                "
+                    target="_blank"
+                    >https://kassandraw.github.io/Re-design/index.html
+                  </a>
                 </div>
-              </div>
-              <div id="pil4"></div>
-            </div>
-          </div>
-          <div class="grid_2-3">
-            <div id="udsnit">
-              <div id="temadokumentation_container">
-                <div id="temadokumentation">
-                  <div id="temadokumentation1"></div>
-                  <div id="temadokumentation2"></div>
-                  <div id="temadokumentation3"></div>
-                  <div id="temadokumentation4"></div>
-                  <div id="temadokumentation5"></div>
-                </div>
-              </div>
-              <div id="pil5"></div>
-            </div>
-            <div class="indhold">
-              <h4><em>05.02.01 Redesign og temadokumentation</em></h4>
-              <p class="brødtekst">
-                Vi skulle i denne opgave lave et redesign af en virksomheds
-                hjemmeside og en tilhørende video. Her blev vi inddelt i
-                firemandsgrupper, og vi skulle i den forbindelse lave en
-                gruppekontrakt. På den måde kunne vi afstemme vores
-                forventninger og danne grundlag for et velfungerende samarbejde.
-                Vi blev i min gruppe enige om, at det var vigtigt, at
-                samarbejdet skulle være behageligt, og at vi alle skulle føle os
-                hørt. I min gruppe fandt vi frem til en zoneterapeut, hvis
-                hjemmeside vi fik lov til at redesigne. Vi blev undervejs også
-                introduceret for Scrum, hvilket er værktøjer, som anvendes i
-                planlægningen af ens arbejde. Hver gang vi mødtes afholdte vi
-                daily scrum, så vi kunne holde hinanden opdateret om, hvor langt
-                vi var nået, og hvilke planer vi havde. Jeg blev bl.a. tildelt
-                opgaven at skulle redigere billeder i Photoshop til vores
-                hjemmeside. Jeg sørgede derudover for, at der var et ensartet
-                design på samtlige af hjemmesidens undersider. Vi lavede
-                undervejs også en række tests såsom BERT-test, eksperttest og
-                lighthouse test.
-              </p>
-              <p class="brødtekst">
-                Links til min gruppes redesign og temadokumentation -
-                kodeord:kea:
-              </p>
-              <div>
                 <a
                   class="brødtekst"
-                  href="https://kassandraw.github.io/Re-design/index.html 
-                "
-                  target="_blank"
-                  >https://kassandraw.github.io/Re-design/index.html
-                </a>
-              </div>
-              <a
-                class="brødtekst"
-                href="
+                  href="
 
                 https://docs.google.com/document/d/1Q6muig5XSaSowtMrfA4ecID-grigmAzAsgSyXGmqE7k/edit#
                 
                 "
-                target="_blank"
-              >
-                https://docs.google.com/document/d/1Q6muig5XSaSowtMrfA4ecID-grigmAzAsgSyXGmqE7k/edit#
-              </a>
+                  target="_blank"
+                >
+                  https://docs.google.com/document/d/1Q6muig5XSaSowtMrfA4ecID-grigmAzAsgSyXGmqE7k/edit#
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div id="balloner_container">
-            <div id="balloner">
-              <div id="ballonsnor"></div>
+          <div>
+            <div id="balloner_container">
+              <div id="balloner">
+                <div id="ballonsnor"></div>
 
-              <div id="ballon1_container">
-                <div id="ballon1"></div>
-              </div>
-              <div id="ballon2_container">
-                <div id="ballon2"></div>
-              </div>
-              <div id="ballon3_container">
-                <div id="ballon3"></div>
+                <div id="ballon1_container">
+                  <div id="ballon1"></div>
+                </div>
+                <div id="ballon2_container">
+                  <div id="ballon2"></div>
+                </div>
+                <div id="ballon3_container">
+                  <div id="ballon3"></div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section> -->
+        <script src="js/projekter.js"></script>
       </div>
-      <div class="grid_1-1">
-        <div class="område">
-          <h3>Tema 6 - Portfolio eksamen</h3>
-          <p class="brødtekst">
-            Jeg valgte at lave en portfolio-hjemmeside i stilen Flat Design. Jeg
-            lod mig inspirere af skyggeteater og tivoli, da jeg designede sidens
-            illustrationer. Illustrationerne af forlystelser mv. lavede jeg i
-            Adobe Illustrator, og jeg valgte at tildele dem animationsklasser i
-            JavaScript. Jeg brugte følgende transform properties i CSS til at
-            animere dem; rotate, translate og transform origin.
-            Designdokumentationerne, som optræder på siden, har jeg sammensat i
-            Adobe XD, og jeg har brugt JavaScript, så det er muligt at skifte i
-            mellem de forskellige dokumentationer. I mit layout af hjemmesiden
-            har jeg brugt gestaltlovene; loven om nærhed, loven om lighed og
-            loven om kontinuitet. Loven om kontinuitet og nærhed ses ved, at
-            dokumentationerne ligger tæt op af og på linje med de tilhørende
-            opgavebeskrivelser. Man kan derudover let adskille
-            temaoverskrifterne, underoverskrifterne og brødteksten fra hinanden,
-            da de har hver sin skrifttype og skriftstørrelse.
-          </p>
-        </div>
-        <div>
-          <div id="pil6"></div>
-          <div id="portfoliodok_container">
-            <div id="portfoliodok">
-              <div id="portfoliodok1"></div>
-              <div id="portfoliodok2"></div>
-              <div id="portfoliodok3"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="js/projekter.js"></script>
     </main>
     <footer></footer>
   </body>

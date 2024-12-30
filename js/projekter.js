@@ -1,5 +1,5 @@
-window.addEventListener("scroll", beginDrop);
-window.addEventListener("scroll", beginSving);
+window.addEventListener("load", beginDrop);
+window.addEventListener("load", beginSving);
 window.addEventListener("load", emnesiteVises);
 window.addEventListener("load", procesVises);
 window.addEventListener("load", spilVises);
@@ -7,29 +7,53 @@ window.addEventListener("load", layoutdiagramVises);
 window.addEventListener("load", redesignVises);
 window.addEventListener("load", dokumentationVises);
 
+const links = document.querySelectorAll("a");
+
+const changeNav = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.85) {
+      if (entry.target.getAttribute("data-background") === "black") {
+        links.forEach((link) => {
+          link.classList.add("white");
+        });
+      } else {
+        links.forEach((link) => {
+          link.classList.remove("white");
+        });
+      }
+    }
+  });
+};
+
+const options = {
+  threshold: 0.85,
+};
+
+const observer = new IntersectionObserver(changeNav, options);
+
+// target the elements to be observed
+const sections = document.querySelectorAll("section");
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
 function beginSving() {
   document.querySelector("#skib").classList.add("sving");
-  window.removeEventListener("scroll", beginSving);
-  document
-    .querySelector("#skib")
-    .addEventListener("animationend", restartSving);
+  document.querySelector("#skib").addEventListener("animationend", restartSving);
 }
 function restartSving() {
   document.querySelector("#skib").classList = "";
   this.offsetHeight;
-  window.addEventListener("scroll", beginSving);
+  beginSving();
 }
 function beginDrop() {
   document.querySelector("#sæder").classList.add("upanddown");
-  window.removeEventListener("scroll", beginDrop);
-  document
-    .querySelector("#sæder")
-    .addEventListener("animationend", restartDrop);
+  document.querySelector("#sæder").addEventListener("animationend", restartDrop);
 }
 function restartDrop() {
   document.querySelector("#sæder").classList = "";
   this.offsetHeight;
-  window.addEventListener("scroll", beginDrop);
+  beginDrop();
 }
 
 function hideAll() {
@@ -64,9 +88,7 @@ function emnesiteVises() {
   console.log("emnesiteVises");
   hideAll();
   document.querySelector("#pil").addEventListener("mousedown", visMoodboard);
-  document
-    .querySelector("#pil")
-    .removeEventListener("mousedown", emnesiteVises);
+  document.querySelector("#pil").removeEventListener("mousedown", emnesiteVises);
 }
 function visMoodboard() {
   document.querySelector("#emnesite1").classList.remove("skjul");
@@ -81,23 +103,17 @@ function visStyletile() {
 function visWireframe1() {
   document.querySelector("#emnesite3").classList.remove("skjul");
   document.querySelector("#pil").addEventListener("mousedown", visWireframe2);
-  document
-    .querySelector("#pil")
-    .removeEventListener("mousedown", visWireframe1);
+  document.querySelector("#pil").removeEventListener("mousedown", visWireframe1);
 }
 function visWireframe2() {
   document.querySelector("#emnesite4").classList.remove("skjul");
   document.querySelector("#pil").addEventListener("mousedown", visWireframe3);
-  document
-    .querySelector("#pil")
-    .removeEventListener("mousedown", visWireframe2);
+  document.querySelector("#pil").removeEventListener("mousedown", visWireframe2);
 }
 function visWireframe3() {
   document.querySelector("#emnesite5").classList.remove("skjul");
   document.querySelector("#pil").addEventListener("mousedown", emnesiteVises);
-  document
-    .querySelector("#pil")
-    .removeEventListener("mousedown", visWireframe3);
+  document.querySelector("#pil").removeEventListener("mousedown", visWireframe3);
 }
 
 function procesVises() {
@@ -118,9 +134,7 @@ function visSkitse() {
 function visMoodboard2() {
   document.querySelector("#løsning3").classList.remove("skjul");
   document.querySelector("#pil2").addEventListener("mousedown", procesVises);
-  document
-    .querySelector("#pil2")
-    .removeEventListener("mousedown", visMoodboard2);
+  document.querySelector("#pil2").removeEventListener("mousedown", visMoodboard2);
 }
 
 function spilVises() {
@@ -131,9 +145,7 @@ function spilVises() {
 function visPrototype() {
   document.querySelector("#dokumentation2").classList.remove("skjul");
   document.querySelector("#pil3").addEventListener("mousedown", visSkitser);
-  document
-    .querySelector("#pil3")
-    .removeEventListener("mousedown", visPrototype);
+  document.querySelector("#pil3").removeEventListener("mousedown", visPrototype);
 }
 function visSkitser() {
   document.querySelector("#dokumentation3").classList.remove("skjul");
@@ -143,36 +155,24 @@ function visSkitser() {
 function visScreendumps() {
   document.querySelector("#dokumentation4").classList.remove("skjul");
   document.querySelector("#pil3").addEventListener("mousedown", spilVises);
-  document
-    .querySelector("#pil3")
-    .removeEventListener("mousedown", visScreendumps);
+  document.querySelector("#pil3").removeEventListener("mousedown", visScreendumps);
 }
 
 function layoutdiagramVises() {
   document.querySelector("#layoutdiagram2").classList.add("skjul");
-  document
-    .querySelector("#pil4")
-    .addEventListener("mousedown", visLayoutdiagram);
-  document
-    .querySelector("#pil4")
-    .removeEventListener("mousedown", layoutdiagramVises);
+  document.querySelector("#pil4").addEventListener("mousedown", visLayoutdiagram);
+  document.querySelector("#pil4").removeEventListener("mousedown", layoutdiagramVises);
 }
 function visLayoutdiagram() {
   document.querySelector("#layoutdiagram2").classList.remove("skjul");
-  document
-    .querySelector("#pil4")
-    .addEventListener("mousedown", layoutdiagramVises);
-  document
-    .querySelector("#pil4")
-    .removeEventListener("mousedown", visLayoutdiagram);
+  document.querySelector("#pil4").addEventListener("mousedown", layoutdiagramVises);
+  document.querySelector("#pil4").removeEventListener("mousedown", visLayoutdiagram);
 }
 
 function redesignVises() {
   hideAll4();
   document.querySelector("#pil5").addEventListener("mousedown", visFilmning);
-  document
-    .querySelector("#pil5")
-    .removeEventListener("mousedown", redesignVises);
+  document.querySelector("#pil5").removeEventListener("mousedown", redesignVises);
 }
 function visFilmning() {
   document.querySelector("#temadokumentation2").classList.remove("skjul");
@@ -182,16 +182,12 @@ function visFilmning() {
 function visMoodboard3() {
   document.querySelector("#temadokumentation3").classList.remove("skjul");
   document.querySelector("#pil5").addEventListener("mousedown", visStyletile2);
-  document
-    .querySelector("#pil5")
-    .removeEventListener("mousedown", visMoodboard3);
+  document.querySelector("#pil5").removeEventListener("mousedown", visMoodboard3);
 }
 function visStyletile2() {
   document.querySelector("#temadokumentation4").classList.remove("skjul");
   document.querySelector("#pil5").addEventListener("mousedown", visTests);
-  document
-    .querySelector("#pil5")
-    .removeEventListener("mousedown", visStyletile2);
+  document.querySelector("#pil5").removeEventListener("mousedown", visStyletile2);
 }
 function visTests() {
   document.querySelector("#temadokumentation5").classList.remove("skjul");
@@ -203,29 +199,19 @@ function dokumentationVises() {
   hideAll5();
   document.querySelector("#portfoliodok1").classList.remove("skjul");
   document.querySelector("#pil6").addEventListener("mousedown", visMoodboard4);
-  document
-    .querySelector("#pil6")
-    .removeEventListener("mousedown", dokumentationVises);
+  document.querySelector("#pil6").removeEventListener("mousedown", dokumentationVises);
 }
 function visMoodboard4() {
   document.querySelector("#portfoliodok2").classList.remove("skjul");
-  document
-    .querySelector("#pil6")
-    .addEventListener("mousedown", visLayoutdiagram2);
-  document
-    .querySelector("#pil6")
-    .removeEventListener("mousedown", visMoodboard4);
+  document.querySelector("#pil6").addEventListener("mousedown", visLayoutdiagram2);
+  document.querySelector("#pil6").removeEventListener("mousedown", visMoodboard4);
   document.querySelector("#portfoliodok1").classList.add("skjul");
 }
 function visLayoutdiagram2() {
   document.querySelector("#portfoliodok3").classList.remove("skjul");
 
-  document
-    .querySelector("#pil6")
-    .addEventListener("mousedown", dokumentationVises);
-  document
-    .querySelector("#pil6")
-    .removeEventListener("mousedown", visLayoutdiagram2);
+  document.querySelector("#pil6").addEventListener("mousedown", dokumentationVises);
+  document.querySelector("#pil6").removeEventListener("mousedown", visLayoutdiagram2);
   document.querySelector("#portfoliodok2").classList.add("skjul");
 }
 document.querySelector("#ballon1").addEventListener("mousedown", springBallon);
@@ -238,16 +224,12 @@ function springBallon() {
 function generateRandomNumber() {
   return Math.floor(Math.random() * 3) + 1;
 }
-document
-  .querySelector("#popcorn_container")
-  .addEventListener("mousedown", springPopcorn);
+document.querySelector("#popcorn_container").addEventListener("mousedown", springPopcorn);
 
 function springPopcorn() {
   let rndNum = generateRandomNumber();
   document.querySelector("#popcorn").classList.add("move" + rndNum);
-  document
-    .querySelector("#popcorn")
-    .addEventListener("animationend", restartSpring);
+  document.querySelector("#popcorn").addEventListener("animationend", restartSpring);
 }
 function restartSpring() {
   document.querySelector("#popcorn").classList = "";
