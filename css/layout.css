@@ -390,7 +390,11 @@ main {
   .grid_3-2 .indhold {
     padding-left: 5%;
   }
-
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   .grid_4-1 {
     display: grid;
     grid-template-columns: 4fr 1fr;
