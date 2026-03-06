@@ -376,9 +376,6 @@ main {
     gap: 1em;
     padding: 0%;
     margin-right: 0%;
-     > div:has(div) {
-      padding-top: 160px;
-    }
   }
 
   #grid_6-1 .indhold {
