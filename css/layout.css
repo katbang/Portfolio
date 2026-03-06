@@ -376,13 +376,16 @@ main {
     gap: 1em;
     padding: 0%;
     margin-right: 0%;
+     > div:has(div) {
+      padding-top: 160px;
+    }
   }
 
   #grid_6-1 .indhold {
     padding-left: 20%;
   }
   .indhold h3 {
-    margin-top: 12px;
+    margin-top: 8px;
   }
   #design_container {
     margin-top: 40%;
@@ -436,7 +439,7 @@ main {
   }
   #balloner_container {
     width: 80%;
-    top: 80%;
+    top: 40%;
     left: 10%;
     aspect-ratio: 696/707;
     position: relative;
